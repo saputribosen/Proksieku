@@ -1,5 +1,5 @@
 proxies:
-- name: biznet-Zoom
+- name: biznet-GIT
   type: trojan
   server: support.zoom.us
   port: 443
@@ -12,7 +12,7 @@ proxies:
     path: "/welcome"
     headers:
       Host: biznet1.lawh.site
-- name: IDSANGORO-webid
+- name: SANGORO-GIT
   type: trojan
   server: support.zoom.us
   port: 443
@@ -25,7 +25,7 @@ proxies:
     path: "/welcome"
     headers:
       Host: sanggoro.lawh.site
-- name: HSP-VMess
+- name: HSP-VMessGIT
   type: vmess
   server: support.zoom.us
   port: 443
@@ -41,7 +41,7 @@ proxies:
     path: "/hello"
     headers:
       Host: hsp1.lawh.site
-- name: HSP-ID
+- name: HSP-GIT
   type: trojan
   server: support.zoom.us
   port: 443
