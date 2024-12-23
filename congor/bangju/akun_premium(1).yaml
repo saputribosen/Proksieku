@@ -1,0 +1,40 @@
+proxies:
+- name: SGHE-zoom
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: da31f2e0-3feb-11ef-878c-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sghe.lawh.site
+- name: SGHERZA
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 5e87d7b0-b957-11ef-833f-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sgherza.lawh.site
+- name: HSP0
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: f8486280-b12b-11ef-b395-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: hsp2.lawh.site
