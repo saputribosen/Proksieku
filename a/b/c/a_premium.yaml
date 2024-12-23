@@ -1,5 +1,5 @@
 proxies:
-- name: SGHE-ZOOM-gituloh
+- name: SGHE-ZOOM-git
   type: trojan
   server: support.zoom.us
   port: 443
