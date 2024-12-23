@@ -1,5 +1,5 @@
 proxies:
-- name: BISNET-ID
+- name: BISNET-GIT
   type: trojan
   server: support.zoom.us
   port: 443
@@ -13,7 +13,7 @@ proxies:
     headers:
       Host: biznet1.lawh.site
 
-- name: HSP-VMess
+- name: HSP-GIT
   type: vmess
   server: support.zoom.us
   port: 443
@@ -29,7 +29,7 @@ proxies:
     path: "/hello"
     headers:
       Host: hsp1.lawh.site
-- name: SANGGORO
+- name: SANGGORO-GIT
   type: trojan
   server: support.zoom.us
   port: 443
@@ -42,7 +42,7 @@ proxies:
     path: "/welcome"
     headers:
       Host: sanggoro.lawh.site
-- name: HSP-ID
+- name: HSP-GIT
   type: trojan
   server: support.zoom.us
   port: 443
@@ -55,29 +55,3 @@ proxies:
     path: "/welcome"
     headers:
       Host: hsp2.lawh.site
-- name: SGHE-22
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: 5c29e320-c0d1-11ef-a476-1577c1651679
-  udp: true
-  sni: zoomgov.lawh.site
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/welcome"
-    headers:
-      Host: sghe.lawh.site
-- name: CLOUD-ID
-  type: trojan
-  server: support.zoom.us
-  port: 443
-  password: e58d73bf-54a4-4db8-aed0-f014ed959630
-  udp: true
-  sni: zoomgov.lawh.site
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: "/trojan"
-    headers:
-      Host: cloud-id.lawh.site
