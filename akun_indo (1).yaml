@@ -1,0 +1,83 @@
+proxies:
+- name: BISNET-ID
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 6b8f3690-b956-11ef-83d7-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: biznet1.lawh.site
+
+- name: HSP-VMess
+  type: vmess
+  server: support.zoom.us
+  port: 443
+  uuid: a203bd60-b956-11ef-a482-1577c1651679
+  alterId: 0
+  cipher: auto
+  udp: true
+  servername: zoomgov.lawh.site
+  skip-cert-verify: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: "/hello"
+    headers:
+      Host: hsp1.lawh.site
+- name: SANGGORO
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 4c4a37c0-966a-11ef-9a5a-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sanggoro.lawh.site
+- name: HSP-ID
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: d4051920-4958-11ef-90de-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: hsp2.lawh.site
+- name: SGHE-22
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 5c29e320-c0d1-11ef-a476-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sghe.lawh.site
+- name: CLOUD-ID
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: e58d73bf-54a4-4db8-aed0-f014ed959630
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/trojan"
+    headers:
+      Host: cloud-id.lawh.site

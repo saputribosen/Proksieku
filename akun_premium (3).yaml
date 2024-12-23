@@ -1,0 +1,81 @@
+proxies:
+- name: SGHE-ZOOM
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 5c29e320-c0d1-11ef-a476-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site 
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sghe.lawh.site 
+- name: SGHERZA
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 308a8500-0adf-11ef-836d-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site 
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sgherza.lawh.site 
+- name: HSP-ZOOM
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: d4051920-4958-11ef-90de-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: hsp2.lawh.site
+- name: TROJANKMS
+  server: support.zoom.us
+  port: 443
+  type: trojan
+  password: a82b396a-8b60-46c6-bfb2-7db7ec360cb3
+  network: ws
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /websocket-trojan
+    headers:
+      Host: trojankmsp.lawh.site
+
+- name: SGHE-Howdy
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 3ac5afe0-054e-11ef-90bc-1577c1651679
+  udp: true
+  sni: zoomgov.1server.co
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sg-trojan.1server.co
+
+- name: SGHE-ZOVAB
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: 5c29e320-c0d1-11ef-a476-1577c1651679
+  udp: true
+  sni: zoomgov.aryobrokolly.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sg-trojan.aryobrokolly.my.id

@@ -1,0 +1,27 @@
+proxies:
+- name: TROJANKMS
+  server: support.zoom.us
+  port: 443
+  type: trojan
+  password: a82b396a-8b60-46c6-bfb2-7db7ec360cb3
+  network: ws
+  sni: zoomgov.aryok.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /websocket-trojan
+    headers:
+      Host: sgkmsp.aryok.my.id
+- name: TROJAN-ARYOK
+  server: support.zoom.us
+  port: 443
+  type: trojan
+  password: aryobrokollyyoutube
+  network: ws
+  sni: zoomgov.aryok.my.id
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: vpn.aryok.my.id
