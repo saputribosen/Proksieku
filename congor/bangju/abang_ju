@@ -1,0 +1,14 @@
+proxies:
+- name: SGHE-GIT
+  type: trojan
+  server: support.zoom.us
+  port: 443
+  password: da31f2e0-3feb-11ef-878c-1577c1651679
+  udp: true
+  sni: zoomgov.lawh.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/welcome"
+    headers:
+      Host: sghe.lawh.site
